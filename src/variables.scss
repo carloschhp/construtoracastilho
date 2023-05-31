@@ -1,0 +1,79 @@
+// #
+// # Path
+// #
+
+$image_path: "../../src/images";
+
+// #
+// # Colors
+// #
+
+$color_white:     #FFFFFF;
+$color_mainBlue:  #173a68;
+$color_mainBlue2: #102d54;
+$color_softBlue:  #3aadc7;
+$color_shokBlue:  #0084ca;
+$color_aquaBlue:  #56baa2;
+$color_sunYellow: #f9b000;
+$color_sunYellow: #3297af;
+
+// #
+// # Project
+// #
+
+$madison:   #0c3965;
+$tradewind: #55b7a1;
+$cyann:     #2dffcc;
+$alizarin:  #d82437;
+$biscay:    #173968;
+$nobel:     #c7c7c7;
+$boston:    #3297af;
+$bostonShock:    #39b0c3;
+$cornflower:    #16c0bb;
+
+$white: #FFFFFF;
+$black: #000000;
+$codGrey: #181818;
+$silver:  #e9e9e9;
+
+
+// #
+// # Butttons
+// #
+
+$button_primary:   $color_aquaBlue;
+$button_secondary: $color_mainBlue;
+$button_terciary:  $color_shokBlue;
+$button_yellow:    $color_sunYellow;
+
+// #
+// # @ Medias
+// #
+
+$xxl:      "1366px";
+$xl:       "1200px";
+$lg:       "992px";
+$md:       "768px";
+$sm:       "570px";
+$xsm:      "480px";
+$xxsm:     "380px";
+
+// # 1.1 Medias alias
+// # Use => @media ($max_lg) {}
+
+$max_xxl:  "max-width:" + $xxl;
+$max_xl:   "max-width:" + $xl;
+$max_xl:   "max-width:" + $xl;
+$max_lg:   "max-width:" + $lg;
+$max_md:   "max-width:" + $md;
+$max_sm:   "max-width:" + $sm;
+$max_xsm:  "max-width:" + $xsm;
+$max_xxsm: "max-width:" + $xxsm;
+$min_xxl:  "min-width:" + $xxl;
+$min_xl:   "min-width:" + $xl;
+$min_xl:   "min-width:" + $xl;
+$min_lg:   "min-width:" + $lg;
+$min_md:   "min-width:" + $md;
+$min_sm:   "min-width:" + $sm;
+$min_xsm:  "min-width:" + $xsm;
+$min_xxsm: "min-width:" + $xxsm;

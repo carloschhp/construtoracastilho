@@ -1,0 +1,723 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"const"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-attachment\tproperty"
+			],
+			[
+				"transform",
+				"transform-origin\tproperty"
+			],
+			[
+				"outer",
+				"outerHeight\t.outerHeight()"
+			],
+			[
+				"obje",
+				"object-fit\tproperty"
+			],
+			[
+				"overf",
+				"overflow-y\tproperty"
+			],
+			[
+				"backgrou",
+				"background-repeat\tproperty"
+			],
+			[
+				"remove",
+				"remove\t.remove()"
+			],
+			[
+				"bckg",
+				"background-position\tproperty"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"prevent",
+				"preventDefault\t(): void Event"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"object",
+				"object-fit\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"preve",
+				"preventDefault\t(): void Event"
+			],
+			[
+				"list-s",
+				"list-style\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color scheme",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"colors",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"colors scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remvoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"c",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 184.0,
+		"history":
+		[
+			"ls",
+			"ll",
+			"pwd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/carlo/Desktop/Projetos/amber2020"
+	],
+	"file_history":
+	[
+		"/C/Users/carlo/Desktop/Projetos/amber2020/src/scss/mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/amber2020/src/mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/amber2020/src/variables.scss",
+		"/C/Users/carlo/Desktop/Projetos/amber2020/src/scss/variables.scss",
+		"/C/Users/carlo/Desktop/Projetos/amber2020/gulp/package.json",
+		"/C/Users/carlo/Desktop/Projetos/embed/.git/hooks/fsmonitor-watchman.sample",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/mundo-animal.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/dist/calculadora.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/dashboard.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/template-parts/dashboard-overlay.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/dist/dashboard.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/dist/receitas.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/teste.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/dist/teste.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/gulp/package.json",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/utils/mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/components/modal.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/template-parts/template-meus-pets.scss",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Monokai++/themes/Monokai++.tmTheme",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/js/main.js",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/main.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/base/header.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/template-parts/template-receitas.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/footer-area-exclusiva.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/header-area-exclusiva.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/gulp/gulpfile.js",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/functions.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-login-area-exclusiva.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/template-parts/hero.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/template-parts/dashboard-actions.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/utils/variables.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/base/reset.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/base/general.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/dist/css/main.css",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/template-parts/hero.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/dashboard.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/utils/animate.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-literaturas.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-guias.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-calculadora.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/gulp/node_modules/aos/src/sass/aos.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/lib/js/main.js",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/lib/css/main.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-receitas.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-orçamento.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-mundo-animal.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-calculadora.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-guias.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-receitas.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-orcamento.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-mundo-animal.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-meus-pets.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/page-literaturas.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/template-parts/dashboard-itens.scss",
+		"/C/Users/carlo/AppData/Local/Temp/tmpE1E4.tmp.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-meus-pets.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/components/buttons.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/pages/area-exclusiva.scss",
+		"/C/Users/carlo/Desktop/Projetos/slash/wp-content/themes/slash/src/scss/utils/_mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/utils/colors.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/gulp/node_modules/bootstrap/scss/bootstrap-grid.scss",
+		"/C/Users/carlo/Desktop/Projetos/slash/wp-content/themes/slash/src/scss/utils/_colors.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/_sass/variables-site/_colors.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/template-parts/modal.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-componentes.php",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/Adaptive.sublime-theme",
+		"/C/Users/carlo/Desktop/Projetos/slash/wp-content/themes/slash/src/scss/base/footer.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/header.php",
+		"/C/Users/carlo/Desktop/Projetos/slash/wp-content/themes/slash/src/scss/components/buttons.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-login.php",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/old_Monokai++/themes/Monokai++.tmTheme",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-intranet.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/scss/base/footer.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/fonts/font-awesome/fa-regular.css",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/fonts/font-awesome/scss/_variables.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/area-exclusiva/src/fonts/font-awesome/fontawesome.css",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/page-area-exclusiva.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/lib/css/_common.scss",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/template-parts/content-page.php",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/gulpfile.js",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/header-custom.php",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama/.gitignore",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/.gitignore",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/js/skip-link-focus-fix.js",
+		"/C/Users/carlo/Desktop/Projetos/drogavet/wp-content/themes/drogavet/footer.php",
+		"/C/Users/carlo/Desktop/Projetos/editora/wp-content/themes/editora-positivo/home.php",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/header.php",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/functions.php",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/old_Adaptive.sublime-theme",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/src/scss/components/_contentAcessibility.scss",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/inc/extra/trimmed.php",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/src/scss/utils/_mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/src/javascript/components/content-acessibility.js",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/templates/content-acessibility.php",
+		"/C/Users/carlo/Desktop/Projetos/yokohama/wp-content/themes/yokohama-institucional/templates/card-noticias.php",
+		"/C/Users/carlo/.bash_profile.recovered",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/gulpfile.js",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/src/fonts/scss/_variables.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/src/fonts/scss/fontawesome.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/src/fonts/scss/fa-brands.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/dist/css/main.css",
+		"/C/Users/carlo/OneDrive/Projetos/Font Awesome Pro 5/fontawesome-pro-5.0.9/fontawesome-pro-5.0.9/web-fonts-with-css/scss/_variables.scss",
+		"/C/Users/carlo/OneDrive/Projetos/Font Awesome Pro 5/fontawesome-pro-5.0.9/fontawesome-pro-5.0.9/web-fonts-with-css/scss/fontawesome.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/src/css/main.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/css/main.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/js/main.js",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/Terminal (Windows).sublime-settings",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/adaptive.sublime-theme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/ayu-dark.sublime-theme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/ayu.sublime-theme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/Antigua.tmTheme",
+		"/C/Program Files/Sublime Text 3/Packages/Atari ST.tmTheme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Agila Theme/Agila Neon Monocyanide.tmTheme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Agila Theme/Agila Neon Monocyanide.tmTheme.chback",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/Dank Neon/Dank_Neon.tmTheme",
+		"/C/Users/carlo/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-theme",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/node_modules/bootstrap/scss/bootstrap-reboot.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/node_modules/bootstrap/scss/bootstrap-grid.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/node_modules/bootstrap/scss/bootstrap.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/dist/css/main.min.css",
+		"/C/Users/carlo/Desktop/Projetos/editora/wp-content/themes/source/less/main/import.less",
+		"/C/Users/carlo/Desktop/Projetos/editora/wp-content/themes/source/less/main/main.less",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/node_modules/bootstrap/scss/_grid.scss",
+		"/C/Users/carlo/Desktop/Projetos/carloschhp.github.io/gulp/node_modules/bootstrap/scss/_mixins.scss",
+		"/C/Users/carlo/Desktop/Projetos/maristalab/wp-content/themes/maristalab/source/js/vendor/main.js"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet/area-exclusiva/src",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet/",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet/area-exclusiva/src",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet\\area-exclusiva\\src",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet,-*C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet\\area-exclusiva\\gulp\\node_modules",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet\\_sass",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\drogavet\\wp-content\\themes\\drogavet",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\lp_ejm\\wp-content\\themes\\ejm",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\lp_ejm\\wp-content\\themes\\ejm\\inc",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\lp_ejm\\wp-content\\themes\\ejm",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\maristalab\\wp-content\\themes\\maristalab\\source\\scss",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\maristalab\\wp-content\\themes\\maristalab\\source",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\maristalab\\wp-content\\themes\\maristalab\\gulp\\node_modules",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\maristalab\\wp-content\\themes\\maristalab\\source\\scss",
+			"C:\\Users\\carlo\\Desktop\\Projetos\\maristalab\\wp-content\\themes\\maristalab"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cleanCSS",
+			"concat",
+			"uglify",
+			"rename",
+			"htmlFit",
+			"cleanhtml",
+			"htmlmin",
+			"testehtml",
+			"htmlmin",
+			"phpFiles",
+			"\"\n",
+			"phpFiles",
+			"htmlmin",
+			"testehtml",
+			"testHtmlfile",
+			"scssFiles",
+			".mainMeusPets__content__results__group__item__content__list__item",
+			"important",
+			"// # 8. Buttons",
+			"#modaladdPrincipioAtivo",
+			"center-bottom",
+			".mainHero",
+			"border-radius: 30px;",
+			"border-radius: 25px;",
+			"border-radius: 15px;",
+			"superTicker",
+			"#",
+			"40",
+			".mainDashBoard__actions__group",
+			"mainPage__title",
+			"top-bottom",
+			"data-aos-delay=\"\"",
+			"tradewind",
+			"biscay",
+			"asdkjnaskjdnasjkdnsjdkn",
+			"red",
+			"pulse",
+			"boxShadow",
+			"15",
+			"\t\t\ta {\n\t\t\t\t&:after {\n\t\t\t\t\topacity: 0;\n\t\t\t\t}\n\t\t\t}",
+			"red",
+			"10",
+			"headerMenuAreaExclusiva",
+			"#mainPage",
+			"data-aos-anchor-placement=\"bottom-bottom\"",
+			"<div class=\"mainDashBoard__actions__group__item\">",
+			".mainDashBoard",
+			"{\n",
+			"// # 2. Padding",
+			"mainDashBoard__actions__group__item ",
+			"#headerMenu",
+			"#btnSearch",
+			"Calculadora",
+			"Literaturas",
+			"mainDashBoard",
+			"<a href=\"\">",
+			"padding",
+			"10px",
+			"0px",
+			"col-12",
+			"// # 2. Padding",
+			";\n",
+			"25px",
+			"25",
+			"// # 2. Padding",
+			"max",
+			"5px",
+			"60px",
+			"40px",
+			"##########",
+			"<span>Meus Pets</span>",
+			"all, .2s, ease",
+			"// # 6. Transition",
+			"@include transition();",
+			"<i class=\"fa fa-cog\"></i>",
+			"mainDashBoard",
+			"// # 2. Padding",
+			"##############################",
+			"ani-circle",
+			"ani_circle",
+			"mainMeusPets__buscar__resultados__group__item__header",
+			"margin-bottom: 40px",
+			"offsetHeight",
+			"toggleButton",
+			".visible",
+			"visible",
+			"<a href=\"\" class=\"button button--circle\"",
+			"ev",
+			"mainMeusPets__buscar__resultados__group__item__header__toggle",
+			" {",
+			"mainMeusPets__buscar__resultados__header",
+			"mainMeusPets__buscar__resultados__group__item__header__info__name",
+			"80px",
+			"25px 15px",
+			"border-radius: 20px;",
+			"mainMeusPets__buscar__resultados__group__item",
+			"mainMeusPets__buscar__resultados__group__item ",
+			"mainMeusPets__buscar__resultados__group__item__list__item",
+			"mainMeusPets__buscar__resultados__group__item__header ",
+			"span",
+			"mainMeusPets__buscar__resultados__content__group",
+			"//",
+			"css/main.css",
+			"main.min.css",
+			"mainMeusPets__buscar__form",
+			".main-loginAreaExclusiva__login__form__fields",
+			"##############################",
+			"mainPage__title",
+			"page_cadastro_link",
+			"mainPage__title",
+			".main-loginAreaExclusiva ",
+			".main-loginAreaExclusiva",
+			".modal-backdrop",
+			"40px",
+			"button",
+			"exampleModal",
+			"exampleModalLabel",
+			"pgHeader tile w-1 f-c",
+			" > ",
+			", 10%);",
+			"loginAreaExclusiva__login__form__rememberMe__cadastro",
+			"button",
+			"iconVeterinario",
+			"span",
+			"main-areaExclusiva",
+			".main-areaExclusiva",
+			"main-areaExclusiva",
+			"areaExclusiva__login"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/source/images/",
+			"background-image: url(../../source/images/",
+			"background-image: url(../source/images/",
+			"background-image: url(../images/",
+			"background-image: url(../dist/images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 53.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "amber.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"overlay",
+				"area-exclusiva\\template-parts\\dashboard-overlay.php"
+			],
+			[
+				"modal",
+				"area-exclusiva\\src\\scss\\components\\modal.scss"
+			],
+			[
+				"dash",
+				"area-exclusiva\\template-parts\\dashboard-actions.php"
+			],
+			[
+				"main",
+				"area-exclusiva\\src\\js\\main.js"
+			],
+			[
+				"dashb",
+				"area-exclusiva\\src\\scss\\pages\\dashboard.scss"
+			],
+			[
+				"mixins",
+				"area-exclusiva\\src\\scss\\utils\\mixins.scss"
+			],
+			[
+				"login",
+				"page-login-area-exclusiva.php"
+			],
+			[
+				"main.scss",
+				"area-exclusiva\\src\\scss\\main.scss"
+			],
+			[
+				"header.scss",
+				"area-exclusiva\\src\\scss\\base\\header.scss"
+			],
+			[
+				"dashbo",
+				"area-exclusiva\\src\\scss\\pages\\dashboard.scss"
+			],
+			[
+				"hero",
+				"area-exclusiva\\template-parts\\hero.php"
+			],
+			[
+				"dashboar",
+				"area-exclusiva\\template-parts\\dashboard-actions.php"
+			],
+			[
+				"variables",
+				"area-exclusiva\\src\\scss\\utils\\variables.scss"
+			],
+			[
+				"variable",
+				"area-exclusiva\\src\\scss\\utils\\variables.scss"
+			],
+			[
+				"gulpfile",
+				"drogavet\\area-exclusiva\\gulp\\gulpfile.js"
+			],
+			[
+				"reset",
+				"drogavet\\area-exclusiva\\src\\scss\\base\\reset.scss"
+			],
+			[
+				"colors",
+				"slash\\src\\scss\\utils\\_colors.scss"
+			],
+			[
+				"mixnis",
+				"drogavet\\area-exclusiva\\src\\scss\\utils\\mixins.scss"
+			],
+			[
+				"footer.scss",
+				"slash\\src\\scss\\base\\footer.scss"
+			],
+			[
+				"button",
+				"slash\\src\\scss\\components\\buttons.scss"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"footer",
+				"area-exclusiva\\src\\scss\\base\\footer.scss"
+			],
+			[
+				"buttons",
+				"area-exclusiva\\src\\scss\\components\\buttons.scss"
+			],
+			[
+				"area-exc",
+				"header-area-exclusiva.php"
+			],
+			[
+				"gulpf",
+				"area-exclusiva\\gulp\\gulpfile.js"
+			],
+			[
+				"main.js",
+				"area-exclusiva\\src\\js\\main.js"
+			],
+			[
+				"commo",
+				"lib\\css\\_common.scss"
+			],
+			[
+				"moda",
+				"src\\scss\\base\\modal.scss"
+			],
+			[
+				"card",
+				"templates\\card-noticias.php"
+			],
+			[
+				"trimm",
+				"inc\\extra\\trimmed.php"
+			],
+			[
+				"mixin",
+				"src\\scss\\utils\\_mixins.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 362.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

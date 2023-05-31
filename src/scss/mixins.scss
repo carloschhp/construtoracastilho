@@ -1,0 +1,955 @@
+@import "variables";
+
+// ####################
+// #################### @Mixins
+// ####################
+
+// # 1. Placeholder
+// # 2. Padding
+// # 3. Inputs
+// # 4. Titles
+// # 5. Fonts
+// # 6. Transition
+// # 7. Page Padding
+// # 8. Buttons
+// # 9. Section
+// # 10. Card Pet
+// # 11. Block
+// # 12. Shine fx
+// # 13. Search Results Card
+// # 14. shadowPulse
+
+// ============================== //
+
+// #
+// # 1. Placeholder
+// # Use => @include placeholder({Font size, Font weight, Font color});
+
+@mixin placeholder($font-size-value: 16px, $font-weight-value: 400, $font-color: $silver){
+	&::-placeholder {
+		font-size: $font-size-value !important;
+		font-weight: $font-weight-value !important;
+		color: $font-color !important;
+	}
+	&::-webkit-input-placeholder {
+		font-size: $font-size-value !important;
+		font-weight: $font-weight-value !important;
+		color: $font-color !important;
+	}
+	&::-moz-placeholder {
+		font-size: $font-size-value !important;
+		font-weight: $font-weight-value !important;
+		color: $font-color !important;
+	}
+	&::-ms-input-placeholder {
+		font-size: $font-size-value !important;
+		font-weight: $font-weight-value !important;
+		color: $font-color !important;
+	}
+}
+
+// ============================== //
+
+// #
+// # 2. Padding
+// # For <section> after <main>
+// # Use => @include padding();
+
+@mixin padding($type: section, $custom_pad: 0px 0px 0px 0px) {
+	@if $type == section {
+		padding: 80px 0px;
+
+		@media ($max_md) {
+			padding: 50px 0px;
+		}
+
+		@media ($max_sm) {
+			padding: 35px 0px;
+		}
+	}
+
+	@else if $type == custom {
+		padding: $custom_pad;
+	}
+}
+
+// ============================== //
+
+// #
+// # 3. Inputs
+// #
+
+@mixin input($type: default) {
+	border: none;
+	border: 2px solid $silver;
+	height: 55px;
+	padding: 0px 20px;
+	width: 100%;
+	border-radius: 50px;
+	color: $biscay;
+	@include transition();
+	@include placeholder(16px, 400, $biscay);
+
+	&:focus,
+	&:active {
+		outline: none;
+		border: 2px solid $biscay;
+	}
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-size: 30px;
+    -webkit-text-fill-color: $white;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+	@media ($max_lg) {
+		height: 45px;
+	}
+
+	@if $type == login {
+		background-color: transparent !important;
+		background: transparent !important;
+		color: $white;
+		border: none;
+		border-radius: 0px;
+		border-bottom: 2px solid $nobel;
+
+		&:focus,
+		&:active {
+      background-color: transparent !important;
+      background: transparent !important;
+			outline: none;
+			border: none;
+			border-bottom: 2px solid $biscay !important;
+		}
+	}
+}
+
+@mixin select() {
+	@extend %font;
+	background-color: $silver;
+	width: 100%;
+	border: none;
+	border-radius: 50px !important;
+	-webkit-appearance: none;
+	height: 55px;
+	padding: 0px 20px;
+  position: relative;
+  color: $madison;
+  z-index: 99;
+  line-height: 20px;
+  @include transition();
+
+	@media ($max_lg) {
+		height: 45px;
+	}
+
+	&:focus,
+	&:active {
+    outline: none;
+    border: none;
+    border: 2px solid $biscay !important;
+	}
+}
+
+// ============================== //
+
+// #
+// # 4. Titles
+// #
+
+@mixin title($type: title1) {
+	font-family: 'Titillium Web', sans-serif;
+
+	@if $type == title1 {
+		font-size: 40px;
+		line-height: 45px;
+
+		@media ($max_lg) {
+			font-size: 30px;
+			line-height: 35px;
+		}
+		@media ($max_md) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+		@media ($max_sm) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	@else if $type == title2 {
+		font-size: 30px;
+		line-height: 35px;
+
+		@media ($max_lg) {
+			font-size: 25px;
+			line-height: 20px;
+		}
+		@media ($max_md) {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		@media ($max_sm) {
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+
+	@else if $type == headerBlock {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	@else if $type == title0 {
+		font-family: 'Lalezar', cursive;
+	}
+}
+
+// ============================== //
+
+// #
+// # 5. Fonts
+// #
+
+@mixin font($type: normal, $fontWeight: 400){
+
+  $titleSize0:  280%;
+  $titleSize1:  250%;
+  $titleSize2:  220%;
+  $titleSize3:  190%;
+  $titleSize4:  160%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @if $type == normal {
+    @extend %font;
+    line-height: 150%;
+    font-weight: $fontWeight;
+    color: $silver;
+  }
+
+  @else if $type == title0 {
+    @extend %font;
+    font-size: $titleSize0;
+    font-weight: $fontWeight;
+    line-height: 120%;
+
+    @media ($max_lg) {
+	    font-size: calc(#{$titleSize0} - 5px);
+    }
+    @media ($max_md) {
+      font-size: calc(#{$titleSize0} - 10px);
+    }
+    @media ($max_sm) {
+      font-size: calc(#{$titleSize0} - 15px);
+    }
+  }
+
+  @else if $type == title1 {
+    @extend %font;
+    font-size: $titleSize1;
+    font-weight: $fontWeight;
+    line-height: 120%;
+
+    @media ($max_lg) {
+	    font-size: calc(#{$titleSize1} - 5px);
+    }
+    @media ($max_md) {
+      font-size: calc(#{$titleSize1} - 10px);
+    }
+    @media ($max_sm) {
+      font-size: calc(#{$titleSize1} - 15px);
+    }
+  }
+
+  @else if $type == title2 {
+    @extend %font;
+    font-size: $titleSize2;
+    font-weight: $fontWeight;
+    line-height: 120%;
+
+    @media ($max_lg) {
+	    font-size: calc(#{$titleSize2} - 5px);
+    }
+    @media ($max_md) {
+      font-size: calc(#{$titleSize2} - 10px);
+    }
+    @media ($max_sm) {
+      font-size: calc(#{$titleSize2} - 15px);
+    }
+
+  }
+
+  @else if $type == title3 {
+    @extend %font;
+    font-size: $titleSize3;
+    font-weight: $fontWeight;
+    line-height: 120%;
+
+    @media ($max_lg) {
+	    font-size: calc(#{$titleSize3} - 5px);
+    }
+    // @media ($max_md) {
+    //   font-size: calc(#{$titleSize3} - 10px);
+    // }
+    // @media ($max_sm) {
+    //   font-size: calc(#{$titleSize3} - 15px);
+    // }
+  }
+
+  @else if $type == title4 {
+    @extend %font;
+    font-size: $titleSize4;
+    font-weight: $fontWeight;
+    line-height: 120%;
+
+    @media ($max_lg) {
+	    font-size: calc(#{$titleSize4} - 5px);
+    }
+  }
+}
+
+// ============================== //
+
+// #
+// # 6. Transition
+// #
+
+@mixin transition($transition: all 0.3s ease) {
+	transition: $transition;
+}
+
+// ============================== //
+
+// #
+// # 7. Page Padding
+// #
+
+@mixin page_padding(
+	$type: default,
+	$customPadding: 80px 0px,
+	$customPaddingMobile: 40px 0px,
+	$customPadding_small: 40px 0px,
+	$customPadding_smallMobile: 40px 0px
+	){
+
+	@if $type == small {
+		margin-top: 40px;
+		padding: $customPadding_small;
+
+		@media ($max_lg) {
+			margin-top: 40px;
+			padding: $customPadding_smallMobile;
+		}
+	}
+
+	@else {
+		padding: $customPadding;
+
+		@media ($max_lg) {
+			padding: $customPaddingMobile;
+		}
+	}
+}
+
+// ============================== //
+
+// #
+// # 8. Buttons
+// #
+
+@mixin button($type: primary) {
+	height: 55px;
+	border-radius: 55px;
+	color: $color_white;
+	padding: 0px 25px;
+	font-size: 18px;
+	border: none;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	@include transition();
+
+	@media ($max_lg) {
+		height: 45px;
+		font-size: 16px;
+	}
+
+	i {
+		margin-right: 10px;
+
+		@media ($max_lg) {
+			margin-right: 6px;
+		}
+	}
+
+	&:hover {
+		background-color: $madison;
+		border-color: $madison;
+		color: $white;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:active {
+    background-color: $madison !important;
+		box-shadow: 0px 0px 0px 6px $madison;
+		outline: none;
+    position: relative;
+	}
+
+	@if $type == primary {
+		background-color: $boston;
+	}
+
+	@else if $type == secondary {
+		background-color: $button_secondary;
+	}
+
+	@else if $type == terciary {
+		background-color: $button_terciary;
+	}
+
+  @else if $type == quaternary {
+    background-color: $alizarin;
+
+    &:hover {
+      background-color: lighten($boston, 15%) !important;
+    }
+  }
+
+	@else if $type == outline {
+		background-color: transparent;
+		border: 2px solid rgb(255, 255, 255);
+		transition: all 0.3s ease;
+
+    &.button--primary {
+      border: 2px solid $boston;
+      color: $boston;
+    }
+
+    &.button--secondary {
+      border: 2px solid $biscay;
+      color: $biscay;
+    }
+
+    &.button--off {
+      border: 2px solid #cecece;
+      color: #cecece;
+    }
+	}
+
+	@else if $type == radial {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 55px;
+    width: 55px;
+		border-radius: 50px;
+
+		i {
+			color: $white;
+			margin: 0px !important;
+		}
+
+    &:hover {
+      i {
+        animation: swing .6s 1 linear;
+      }
+    }
+	}
+
+	@else if $type == small {
+		height: 40px;
+		font-size: 14px;
+		padding: 0px 15px;
+
+    &.button--circle {
+      width: 40px;
+    }
+
+    i {
+      font-size: 16px;
+    }
+
+		@media ($max_md) {
+			height: 35px;
+			padding: 0px 15px;
+
+      i {
+        font-size: 12px;
+      }
+
+      &.button--circle {
+        width: 35px;
+      }
+		}
+	}
+
+  @else if $type == search {
+    background-color: transparent;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    i {
+      font-size: 25px;
+      color: $boston;
+      @include transition();
+    }
+
+    &:hover {
+      background-color: transparent !important;
+      transform: translateY(-3px);
+      i {
+        color: $madison;
+      }
+    }
+
+    &:focus,
+    &:active {
+      transform: translateY(0px);
+      box-shadow: 0px 0px 0px 3px $boston;
+    }
+
+    @media ($max_lg) {
+      height: 45px;
+      width: 45px;
+
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// ============================== //
+
+// # 9. Section
+
+@mixin section() {
+	padding: 40px 0px;
+	float: left;
+	width: 100%;
+}
+
+// ============================== //
+
+// # 10. Card Pet
+
+@mixin cardPet($class) {
+	#{$class}__item {
+		display: block;
+		padding: 25px 25px;
+		background-color: white;
+		border-radius: 20px;
+		box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.2);
+
+		+ #{$class}__item {
+			margin-top: 40px;
+		}
+
+		@media ($max_lg) {
+			padding: 25px 15px;
+		}
+	}
+
+	#{$class}__item__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#{$class}__item__header__info {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-basis: calc(100% - 55px);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 80px;
+
+			@media ($max_lg) {
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		#{$class}__item__header__info__name {
+			margin-left: 25px;
+
+			> span {
+				text-align: left;
+				margin: 0px;
+				display: block;
+				color: $biscay;
+
+				&:first-child {
+					text-transform: uppercase;
+					margin-bottom: 5px;
+					font-size: 20px;
+					font-weight: bold;
+				}
+			}
+
+			@media ($max_lg) {
+				margin-left: 15px;
+			}
+		}
+	}
+}
+
+// ============================== //
+
+// # 11. Block
+
+@mixin template($type: base) {
+
+  @if $type == base {
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.2);
+  }
+
+	@if $type == header {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 20px;
+		padding: 30px 30px;
+		background: #165077;
+		background-image: linear-gradient(45deg, #11426b, #0b3561);
+		min-height: 160px;
+    box-shadow: inset 0px -35px 30px -25px rgba(0, 0, 0, 0.2);
+
+		@media ($max_md) {
+			margin-bottom: 10px;
+			padding: 30px 20px 25px 20px;
+			min-height: auto;
+		}
+
+		[class*="__header__icon"] {
+			width: 100px;
+			margin-right: 25px;
+      // transition-delay: .2s;
+
+			@media ($max_md) {
+				width: 70px;
+				margin-right: 15px;
+			}
+
+      // @media ($max_sm) {
+      //   width: 50px;
+      //   margin-right: 15px;
+      // }
+
+			img {
+				width: 100%;
+				max-width: 100px;
+				max-height: 100px;
+				display: block;
+				height: auto;
+
+				@media ($max_md) {
+					max-width: 70px;
+					max-height: 70px;
+				}
+
+        // @media ($max_sm) {
+        //   max-width: 50px;
+        //   max-height: 50px;
+        // }
+			}
+		}
+
+		[class*="__header__title"] {
+			width: 100%;
+
+			h2 {
+				@include font(title0);
+				color: $white;
+				margin: 0px;
+			}
+		}
+	}
+
+	@else if $type == content {
+		padding: 25px 25px 45px 25px;
+
+		@media ($max_md) {
+			padding: 20px 20px 25px 20px;
+		}
+
+    @media ($max_sm) {
+      padding: 20px 15px 20px 15px;
+    }
+	}
+
+	@else if $type == form {
+
+		+ form {
+			margin-bottom: 25px;
+		}
+
+		legend,
+		span:not(.separator),
+		[class$="__form__label"] {
+			display: block;
+			color: $biscay;
+			font-size: 18px;
+			line-height: 22px;
+			margin: 10px 0px;
+
+      @media ($max_md) {
+        font-size: 16px;
+      }
+
+			&.margin {
+				margin: 30px 0px;
+			}
+
+			&.margin-b {
+				margin: 0px 0px 30px 0px;
+			}
+
+			&.center {
+				text-align: center;
+			}
+
+			&.right {
+				text-align: right;
+			}
+
+			&.left {
+				text-align: left;
+			}
+		}
+
+		.form-title {
+			display: block;
+			text-transform: uppercase;
+			color: $biscay;
+			margin: 10px 0px;
+
+			&.margin {
+				margin: 30px 0px;
+			}
+
+			&.center {
+				text-align: center;
+			}
+
+			&.right {
+				text-align: right;
+			}
+
+			&.left {
+				text-align: left;
+			}
+
+			+ .form-group {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+// ============================== //
+
+// # 12. Shine fx
+
+@mixin shine($type: default) {
+	will-change: background;
+
+	@if $type == default {
+		color: $madison;
+		background: linear-gradient(to left, $madison 30%, lighten($tradewind, 0%) 50%, lighten($tradewind, 0%) 60%, $madison 80%);
+	}
+
+	animation: shine 4s linear infinite;
+	background-size: 200% auto;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+
+	@keyframes shine {
+		to {
+			background-position: 200% center;
+		}
+	}
+}
+
+// ============================== //
+
+// # 13. Search Results Card
+
+@mixin searchResultsCard($type: modal) {
+
+  @if $type == principioAtivo {
+
+    > span {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      color: #173a67;
+      display: block;
+    }
+
+    .searchResults__group__item {
+
+      .searchResults__group__item__header {
+        background-color: $silver;
+        border-radius: 50px;
+        padding: 8px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include transition();
+
+        .searchResults__group__item__title {
+          padding-left: 12px;
+          color: $madison;
+          @include transition();
+        }
+
+        &:hover,
+        &.active {
+          background-color: darken($silver, 10%);
+
+          .searchResults__group__item__title {
+            padding-left: 20px;
+          }
+        }
+
+        &.active {
+          a {
+            i {
+              &:before {
+                content: '\f068';
+              }
+            }
+          }
+        }
+      }
+
+      .searchResults__group__item__info {
+        will-change: opacity, visibility, scroll-position, contentents;
+        padding: 0px 20px;
+        margin-top: 0px;
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+        height: 0px;
+        @include transition();
+
+        > span {
+          margin-bottom: 20px;
+          display: block;
+          text-transform: uppercase;
+          color: $biscay;
+        }
+
+        ul {
+          li {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e9e9e9;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+          }
+        }
+
+        &.active {
+          visibility: visible;
+          opacity: 1;
+          padding: 20px 20px;
+          margin-top: 10px;
+        }
+      }
+
+      + .searchResults__group__item {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @else if $type == arquivos {
+    > span {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      color: #173a67;
+      display: block;
+    }
+
+    .searchResults__group__item {
+
+      .searchResults__group__item__header {
+        background-color: $silver;
+        border-radius: 50px;
+        padding: 8px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include transition();
+
+        .searchResults__group__item__title {
+          padding-left: 12px;
+          color: $madison;
+          @include transition();
+        }
+
+        &:hover {
+          background-color: darken($silver, 10%);
+        }
+      }
+
+      + .searchResults__group__item {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// ============================== //
+
+// # 14. shadowPulse
+
+@mixin shadowPulse($interation: infinite, $color: $boston, $shadowSize: 15px){
+
+  will-change: box-shadow;
+  animation: shadowPulse 2s $interation;
+
+  @keyframes shadowPulse {
+    0% {
+      box-shadow: 0px 0px 0px 0px rgba($color, 0.7);
+    }
+    70% {
+      box-shadow: 0px 0px 0px $shadowSize rgba($color, 0);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px rgba($color, 0);
+    }
+  }
+}
