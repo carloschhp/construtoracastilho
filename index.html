@@ -1,302 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Amberleaf</title>
-	<meta name="viewport" content="width=320, initial-scale=1">
-	<link rel="stylesheet" href="dist/css/main.css">
-	<script src="dist/js/main.min.js"></script>
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    /* Estilos CSS para o banner e o header */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #banner {
+      height: 100vh;
+      background: url('slider.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    header {
+      background: #f2f2f2;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #logo {
+      font-weight: bold;
+      font-size: 24px;
+      background-image: url('https://www.castilho.com.br/img/logo-castilho.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 40px;
+      width: 200px;
+    }
+
+    #menu {
+      display: flex;
+    }
+
+    #menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    #menu ul li {
+      margin-right: 10px;
+    }
+
+    #menu ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+    }
+
+    #dropdown {
+      position: relative;
+    }
+
+    #dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    #dropdown:hover #dropdown-content {
+      display: block;
+      opacity: 1;
+    }
+
+    #banner-content {
+      text-align: center;
+      margin-top: 20vh;
+      color: #fff;
+    }
+
+    .button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Estilos CSS para a barra lateral */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 300px;
+      height: 100vh;
+      background-color: #f2f2f2;
+      transition: left 0.3s ease;
+    }
+
+    #sidebar.open {
+      left: 0;
+    }
+
+    #sidebar ul {
+      padding: 20px;
+    }
+
+    #sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    #sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    /* Estilos CSS para o botão flutuante */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      opacity: 0.7;
+    }
+  </style>
 </head>
-
 <body>
+  <div id="banner">
+    <header>
+      <div id="logo"></div>
+      <div id="menu">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li id="dropdown">
+            <a href="#">Áreas de atuação</a>
+            <div id="dropdown-content">
+              <a href="#">Sublink 1</a>
+              <a href="#">Sublink 2</a>
+              <a href="#">Sublink 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="banner-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="#" class="button">Saiba mais</a>
+    </div>
+  </div>
 
-	<header class="main-header">
-		<div class="container">			
+  <!-- Código JavaScript para o botão flutuante e barra lateral -->
+  <script>
+    // Botão flutuante para voltar ao topo
+    var backToTopButton = document.getElementById('back-to-top');
 
-			<nav class="main-nav">
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 100) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
 
-				<div class="main-nav__logo">
-					<a href="">
-						<img src="dist/img/amberlogo.png" alt="Amberleaf logo">
-					</a>
-				</div>
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
 
-				<div class="main-nav__menu-trigger">
-					<i class="fa fa-bars"></i>
-				</div>
+    // Barra lateral
+    var sidebar = document.getElementById('sidebar');
+    var sidebarToggle = document.getElementById('sidebar-toggle');
 
-			</nav>
+    sidebarToggle.addEventListener('click', function() {
+      sidebar.classList.toggle('open');
+    });
+  </script>
 
-		</div>
-	</header>
+  <!-- Botão flutuante para voltar ao topo -->
+  <div id="back-to-top">&#8593;</div>
 
-	<main class="main-content">
-
-		<div class="main-banner main-banner--image main-banner--flex">
-			<div class="container">
-
-				<div class="main-banner__content">
-					<h2 class="main-banner__content__title title title--1">Vamos juntos desenvolver a melhor transformação digital para o seu negócio</h2>
-					<p class="align-center">A Amber é uma empresa de serviços de consultoria que apoia seus clientes no processo de transformação digital. Focados em Customer Experience (CX) e Automação de Processos, orientamos os clientes com as melhores práticas de mercado.</p>
-
-					<div class="bar-actions align-center">
-						<a href="#" class="button button--primary">Quero saber mais</a>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-
-		<div class="main-content__block sectionSolucoes">
-			<div class="container">
-
-				<h2 class="title title--1 min-md-70">Soluções adequadas para qualquer negócio</h2>
-
-				<p>Quer uma visão transparente, realista e precisa do desempenho dos seus negócios</p>
-
-				<h4 class="title title--4 fw-400">A Amber tem a solução</h3>
-
-				<p>Conduzimos empresas ou organizações, independente do segmento ou do tamanho, alcançarem a transformação digital, para gerar a melhor experiência ao cliente, com base em três pilares:</p>
-
-				<ul>
-					<li>Vendas – Serviços – Marketing</li>
-					<li>Desempenho – Eficiência Operacional</li>
-					<li>Gestão dos riscos – Cumprimento do Regulamento</li>
-				</ul>
-
-				<p>Através de uma consultoria voltada a necessidade de nossos clientes, desenvolvemos soluções inovadoras em multicanal baseadas na nuvem com o foco em Customer Experience (CX) e Automação de Processos.</p>
-
-				<div class="main-content__block__group box-group">
-					<div class="row">
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-							<div class="box">
-								<div class="box__image">
-									<img src="dist/img/card_img1.jpg" alt="">
-								</div>
-								<div class="box-content">
-									<div class="box__title">
-										<h3 class="title title--3">Customer Experience</h3>
-									</div>
-									<div class="box__description">
-										<p>Nossos parceiros tecnológicos nos permitem entregar as melhores soluções de Customer Experience (CX) na nuvem, aprimorando sua estratégia de atendimento ao cliente.</p>
-									</div>
-									<div class="box__logos">
-										<a href="#">
-											<img src="dist/img/parceiros/salesforce.png" alt="">
-										</a>
-										<a href="#">
-											<img src="dist/img/parceiros/oracle.png" alt="">
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="box-secondary">
-								<div class="box-content">
-									<h2 class="title title--2">Soluções</h2>
-									<p>Implantamos soluções CRM com foco nas áreas de vendas, serviços e marketing, todos voltados para o melhor atendimento ao cliente.</p>
-									<p>Nosso portfólio de serviços abrange:</p>
-									<ul>
-										<li>Gestão de Projetos</li>
-										<li>Desenho</li>
-										<li>Implementação</li>
-										<li>Treinamento</li>
-										<li>Mentoria</li>
-										<li>Otimização</li>
-										<li>Sustentação</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-							<div class="box">
-								<div class="box__image">
-									<img src="dist/img/card_img2.jpg" alt="">
-								</div>
-								<div class="box-content">
-									<div class="box__title">
-										<h3 class="title title--3">Automação de Processos</h3>
-									</div>
-									<div class="box__description">
-										<p>A forma mais moderna e eficiente de tornar mais dinâmica a rotina do seu negócio é com a Automação de Processos. Através das soluções do nosso parceiro SoftwareAG desenvolvemos projetos que permitem uma melhor execução de tarefas sem perder a qualidade.</p>
-									</div>
-									<div class="box__logos box__logos-lc">
-										<a href="#">
-											<img src="dist/img/parceiros/softwareag.png" alt="">
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="box-secondary">
-								<div class="box-content">
-									<h2 class="title title--2">Produtos SoftwareAG</h2>
-									<ul>
-										<li>ARIS WebMethodos</li>
-										<li>RPA</li>
-									</ul>
-									<p>Portfólio de Serviços</p>
-									<ul>
-										<li>Mapeamento de processos</li>
-										<li>Consultoria de melhores práticas</li>
-										<li>Desenvolvimento</li>
-										<li>Integração</li>
-										<li>Treinamento</li>
-										<li>Mentoria</li>
-										<li>Sustentação</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<div class="conheca">
-								<div class="conheca__content">
-									<div class="conheca__title">
-										<h2 class="title title--default title--1">Conheça agora mesmo a melhor solução digital</h2>
-									</div>
-									<div class="conheca__description">
-										<p>Fale agora mesmo com um de nossos consultores especializados</p>
-									</div>
-									<div class="bar-actions align-center">
-										<a href="#" class="button button--secondary">Quero experimentar</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="main-content__block porque-amber">
-			<div class="container">
-
-				<div class="main-content__block__header">
-					<h3 class="title title--4 fw-400 before-title">Somos diferentes</h3>
-					<h2 class="title title--1 main-title">Por que a Amber</h2>
-				</div>
-
-				<div class="main-content__block__group">
-					<div class="row">
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-							<div class="boxDiferencial">
-
-								<div class="boxDiferencial__title">
-									<img src="dist/img/icones/ico1.jpg" alt=""><h3 class="title title--default fw-400 title--4">Equipe qualificada</h3>
-								</div>
-
-								<div class="boxDiferencial__description">
-									<p>Estamos constantemente investindo no aprimoramento dos nosso profissionais por meio de treinamentos e certificações.</p>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-							<div class="boxDiferencial">
-
-								<div class="boxDiferencial__title">
-									<img src="dist/img/icones/ico2.jpg" alt=""><h3 class="title title--default fw-400 title--4">Flexibilidade</h3>
-								</div>
-
-								<div class="boxDiferencial__description">
-									<p>Nos adaptamos ao projeto e modelo de negócio que mais adequa a sua realidade: Turn Key, Agile e Time & Material</p>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-							<div class="boxDiferencial">
-
-								<div class="boxDiferencial__title">
-									<img src="dist/img/icones/ico3.jpg" alt=""><h3 class="title title--default fw-400 title--4">Mínimo produto viável</h3>
-								</div>
-
-								<div class="boxDiferencial__description">
-									<p>Entendemos os requisitos do seu negócio, oferecemos um projeto viável considerando as necessidades e o ROI.</p>
-								</div>
-
-							</div>
-						</div>
-
-						
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="main-content__block nossosClientes">
-			<h2 class="title title--2">Nossos Clientes</h2>
-
-			<div class="nossosClientes__group">
-				<a href="#"><img src="dist/img/parceiros/parceiro1.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro2.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro3.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro4.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro5.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro6.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro7.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro8.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro9.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro10.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro11.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro12.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro13.png" alt=""></a>
-				<a href="#"><img src="dist/img/parceiros/parceiro14.png" alt=""></a>
-			</div>
-		</div>
-
-		<div class="main-content__block sectionContato">
-			<div class="container">
-				<div class="sectionContato__header">
-					<h2 class="title title--1">Fale conosco agora mesmo</h2>
-				</div>
-				<div class="sectionContato__content">
-					<form id="" action="" class="formContato">
-						<input type="text" placeholder="Seu nome">
-						<input type="email" placeholder="Seu email">
-						<button type="submit" class="button button--primary">Enviar contato</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	
-	</main>
-
-	<footer class="main-footer">
-		<div class="container">
-
-			<div class="main-footer__logo">
-				<a href="#">
-					<img src="dist/img/amberlogo.png" alt="Amberleaf logo">
-				</a>
-			</div>
-
-			<div class="main-footer__content">
-				<div class="main-footer__content__block">
-					<span class="address">Av. Roque Petroni Júnior, 850 – 10° andar - Jardim das Acacias – São Paulo, SP</span>
-					<span class="phone"><img src="dist/img/icones/whats.jpg" alt="">+55 11 987 456 321 ou +55 41 3095 5015</span>
-				</div>
-				<div class="main-footer__content__block">
-					<span class="email"><img src="dist/img/icones/email.jpg" alt="">amber@amber.com.br</span>
-					<span class="phone"><img src="dist/img/icones/whats.jpg" alt="">+55 11 987 456 321</span>
-				</div>
-				<div class="main-footer__content__block">
-					<span class="copyright">Copyright 2019 Amber do Brasil. Todos os direitos reservados.</span>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-
+  <!-- Barra lateral -->
+  <div id="sidebar">
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      <li id="dropdown">
+        <a href="#">Áreas de atuação</a>
+        <div id="dropdown-content">
+          <a href="#">Sublink 1</a>
+          <a href="#">Sublink 2</a>
+          <a href="#">Sublink 3</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
