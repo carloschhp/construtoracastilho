@@ -2,12 +2,24 @@
 <html>
 <head>
   <title>Meu Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
     /* Estilos CSS para o banner e o header */
     body {
       margin: 0;
       padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .content {
+      margin-top: 20px;
     }
 
     #banner {
@@ -79,6 +91,9 @@
       text-align: center;
       margin-top: 20vh;
       color: #fff;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .button {
@@ -126,14 +141,46 @@
       background-color: #333;
       color: #fff;
       padding: 10px 20px;
-      border-radius: 50%;
       display: none;
-      cursor: pointer;
-      transition: opacity 0.3s ease;
     }
 
-    #back-to-top:hover {
-      opacity: 0.7;
+    /* Estilos CSS para o botão toggle */
+    .toggle-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-button:hover {
+      animation: bounce 0.5s;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsividade */
+    @media (max-width: 767px) {
+      #sidebar {
+        width: 100%;
+        left: -100%;
+      }
+
+      #sidebar.open {
+        left: 0;
+      }
     }
   </style>
 </head>
@@ -141,36 +188,50 @@
   <div id="banner">
     <header>
       <div id="logo"></div>
-      <div id="menu">
+      <nav id="menu">
         <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Home</a></li>
           <li id="dropdown">
-            <a href="#">Áreas de atuação</a>
+            <a href="#">Dropdown</a>
             <div id="dropdown-content">
-              <a href="#">Sublink 1</a>
-              <a href="#">Sublink 2</a>
-              <a href="#">Sublink 3</a>
+              <a href="#">Item 1</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
             </div>
           </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-      </div>
+      </nav>
+      <button class="toggle-button">Toggle Sidebar</button>
     </header>
     <div id="banner-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a href="#" class="button">Saiba mais</a>
+      <h1>Welcome to My Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris varius, lacinia enim at, sodales metus. Aliquam pellentesque ex nec mi ullamcorper tristique. Aenean pretium quam vitae luctus ultricies.</p>
+      <a href="#" class="button">Learn More</a>
     </div>
   </div>
-
-  <!-- Código JavaScript para o botão flutuante e barra lateral -->
+  <div class="container">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris varius, lacinia enim at, sodales metus. Aliquam pellentesque ex nec mi ullamcorper tristique. Aenean pretium quam vitae luctus ultricies.</p>
+    </div>
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris varius, lacinia enim at, sodales metus. Aliquam pellentesque ex nec mi ullamcorper tristique. Aenean pretium quam vitae luctus ultricies.</p>
+    </div>
+  </div>
   <script>
-    // Botão flutuante para voltar ao topo
-    var backToTopButton = document.getElementById('back-to-top');
+    // Código JavaScript para o botão toggle
+    const toggleButton = document.querySelector('.toggle-button');
+    const sidebar = document.getElementById('sidebar');
+
+    toggleButton.addEventListener('click', function() {
+      sidebar.classList.toggle('open');
+    });
+
+    // Código JavaScript para o botão de voltar ao topo
+    const backToTopButton = document.getElementById('back-to-top');
 
     window.addEventListener('scroll', function() {
       if (window.pageYOffset > 100) {
@@ -181,41 +242,8 @@
     });
 
     backToTopButton.addEventListener('click', function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    // Barra lateral
-    var sidebar = document.getElementById('sidebar');
-    var sidebarToggle = document.getElementById('sidebar-toggle');
-
-    sidebarToggle.addEventListener('click', function() {
-      sidebar.classList.toggle('open');
+      window.scrollTo(0, 0);
     });
   </script>
-
-  <!-- Botão flutuante para voltar ao topo -->
-  <div id="back-to-top">&#8593;</div>
-
-  <!-- Barra lateral -->
-  <div id="sidebar">
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
-      <li><a href="#">Link 5</a></li>
-      <li id="dropdown">
-        <a href="#">Áreas de atuação</a>
-        <div id="dropdown-content">
-          <a href="#">Sublink 1</a>
-          <a href="#">Sublink 2</a>
-          <a href="#">Sublink 3</a>
-        </div>
-      </li>
-    </ul>
-  </div>
 </body>
 </html>
