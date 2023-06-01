@@ -32,7 +32,7 @@
       }
 
       #banner {
-        background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg');
+        background-image: url('https://i.imgur.com/VvzuCnc.jpg');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -85,6 +85,10 @@
       #banner h1 {
         font-size: 36px;
         margin-bottom: 20px;
+      }
+
+      #banner .banner__texto {
+        text-align: center;
       }
 
       #content {
@@ -205,4 +209,10 @@
         margin-top: 15px;
         color: #333;
         text-decoration: underline;
+      }
+
+      #content-section .content-item {}
+
+      #content-section .content-item .item__description p {
+
       }

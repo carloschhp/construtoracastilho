@@ -21,26 +21,34 @@
 		<nav id="menu">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="#">Sobre</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Dropdown</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Ação</a>
+						<a class="dropdown-item" href="#">Outra ação</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item" href="#">Algo mais aqui</a>
 					</div>
 				</li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<div id="banner">
-		<h1>Bem-vindo ao Meu Site</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus auctor, sagittis dui at, aliquet nisl.
-			Nunc vel placerat lacus.</p>
+		<div class="col-12">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="banner__texto">
+							<p>A Construtora Castilho desenvolve projetos de engenharia e obras de infraestrutura em todo o território nacional e possui filiais em diversos pontos do país. Desde 1958, atua no mercado de construção pesada, com especialidade no segmento de obras rodoviárias.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div id="content">
@@ -48,31 +56,39 @@
 		<section class="slider-section">
 			<div class="slider">
 				<div class="slider-item" id="slider-item-1">
-					<h1>Título do Item 1</h1>
-					<a href="#content-section" onclick="showContent('content-item-1')">Saiba Mais</a>
+					<h1>CONCESSÕES</h1>
+					<a href="#content-section" onclick="showContent('content-item-1')">Veja Obras</a>
 				</div>
 				<div class="slider-item" id="slider-item-2">
-					<h1>Título do Item 2</h1>
-					<a href="#content-section" onclick="showContent('content-item-2')">Saiba Mais</a>
+					<h1>FERROVIAS</h1>
+					<a href="#content-section" onclick="showContent('content-item-2')">Veja Mais</a>
 				</div>
 				<div class="slider-item" id="slider-item-3">
-					<h1>Título do Item 3</h1>
-					<a href="#content-section" onclick="showContent('content-item-3')">Saiba Mais</a>
+					<h1>MINERAÇÃO</h1>
+					<a href="#content-section" onclick="showContent('content-item-3')">Veja Mais</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="content-section">
+			<div class="container">
 			<div class="content-item" id="content-item-1">
-				<h2>Título do Conteúdo Relacionado 1</h2>
+				<h2>CONCESSÕES</h2>
+				<div class="content-item__description">
+					<br>
+					<p>A Castilho foi uma das pioneiras a atuar no mercado de concessões e, por isso, conta com especial experiência no setor, além de ótimos resultados e uma moderna visão de planejamento e investimento de longo prazo.</p>
+				</div>
 				<div class="content-details">
-					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892364_960_720.jpg"
-							alt="Imagem de Fundo 1">
-						<label class="city-label">Nome da Cidade 1</label>
-					</div>
-					<div class="content-description">
-						<p>Conteúdo descritivo sobre a cidade 1...</p>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="content-image">
+								<img src="https://i.imgur.com/tleN08u.jpg" alt="Imagem de Fundo 1">
+								<label class="city-label">Matinhos</label>
+							</div>
+							<div class="content-description">
+								<p>Obra feita no Paraná</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -81,8 +97,7 @@
 				<h2>Título do Conteúdo Relacionado 2</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg"
-							alt="Imagem de Fundo 2">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg" alt="Imagem de Fundo 2">
 						<label class="city-label">Nome da Cidade 2</label>
 					</div>
 					<div class="content-description">
@@ -94,21 +109,16 @@
 			<div class="content-item" id="content-item-3">
 				<h2>Título do Conteúdo Relacionado 3</h2>
 				<div class="content-details">
-					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg"
-							alt="Imagem de Fundo 3">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg" alt="Imagem de Fundo 3">
 						<label class="city-label">Nome da Cidade 3</label>
 					</div>
 					<div class="content-description">
 						<p>Conteúdo descritivo sobre a cidade 3...</p>
 					</div>
-				</div>
 			</div>
+			</div>
+		</div>
 		</section>
-
-		<script>
-
-		</script>
 
 	</div>
 
@@ -116,61 +126,34 @@
 		<p>&copy; 2023 Construtora Castilho. Todos os direitos reservados.</p>
 	</footer>
 
+	<script>
+		function showContent(contentId) {
+			// Oculta todos os content-items
+			var contentItems = document.querySelectorAll('.content-item');
+			contentItems.forEach(function(item) {
+				item.style.display = 'none';
+			});
+
+			// Exibe o content-item correspondente ao slider-item clicado
+			var selectedContent = document.getElementById(contentId);
+			selectedContent.style.display = 'block';
+		}
+	</script>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script>
-		document.addEventListener("DOMContentLoaded", (event) => {
-			$(document).ready(function () {
-				$('.slider').slick({
-					dots: true,
-					arrows: true,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					autoplay: true,
-					autoplaySpeed: 5000
-				});
+		$(document).ready(function () {
+			$('.slider').slick({
+				dots: true,
+				arrows: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
 			});
-
-			// Seleciona todos os links com a classe "scroll-link"
-			const scrollLinks = document.querySelectorAll('.scroll-link');
-
-			// Adiciona o evento de clique em cada link
-			scrollLinks.forEach(link => {
-				link.addEventListener('click', smoothScroll);
-			});
-
-			// Função para rolagem suave ao clicar em um link
-			function smoothScroll(event) {
-				event.preventDefault();
-
-				const targetId = this.getAttribute('href'); // Obtém o ID do alvo da rolagem
-
-				// Calcula a posição do alvo em relação ao topo da página
-				const targetPosition = document.querySelector(targetId).offsetTop;
-
-				// Faz a rolagem suave utilizando a função scrollIntoView
-				window.scrollTo({
-					top: targetPosition,
-					behavior: 'smooth'
-				});
-			}
-
-			function showContent(contentId) {
-				// Oculta todos os content-items
-				var contentItems = document.querySelectorAll('.content-item');
-				contentItems.forEach(function (item) {
-					item.style.display = 'none';
-				});
-
-				// Exibe o content-item correspondente ao slider-item clicado
-				var selectedContent = document.getElementById(contentId);
-				selectedContent.style.display = 'block';
-			}
 		});
 	</script>
-
 </body>
 
 </html>

@@ -19,7 +19,8 @@
   "homepage": "https://github.com/carloschhp/construtoracastilho#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-cssmin": "^0.2.0"
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0"
   },
   "dependencies": {
     "gulp-rename": "^2.0.0"
