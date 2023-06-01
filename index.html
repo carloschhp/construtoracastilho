@@ -5,15 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Construtora Castilho</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-	<link rel="stylesheet" href="dist/css/style.css">
-	<link rel="stylesheet" href="dist/css/style.min.css">
-	<!-- jQuery CDN -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<!-- Plugin dropdown.js CDN -->
+	<link rel="stylesheet" href="dist/css/main.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Inclua o jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="dist/js/script.min.js"></script>
+
+	<!-- Inclua as bibliotecas do Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -22,16 +28,43 @@
 		<nav id="menu">
 			<ul>
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Área Restrita</a></li>
+				<li><a href="#">Compliance</a></li>
+				<li><a href="#">Clientes</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Dropdown</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Ação</a>
-						<a class="dropdown-item" href="#">Outra ação</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Algo mais aqui</a>
-					</div>
+						aria-expanded="false">Áreas de Atuação</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://www.castilho.com.br/concessao.html" data-target="#content-item-concessoes">Concessões</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/contencao.html" data-target="#content-item-contencoes">Contenções/Obras de Artes Especiais</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/construcao.html" data-target="#content-item-construcao">Construção Civil/Industriais</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/ferrovias.html" data-target="#content-item-ferrovias">Ferrovias</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/infraestrutura.html" data-target="#content-item-infraestrutura">Infraestrutura/Resíduos Sólidos</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/ISO9001.html" data-target="#content-item-iso9001">ISO 9001</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/em-breve.html" data-target="#content-item-mapa">Mapa</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/macrodrenagem.html" data-target="#content-item-macrodrenagem">Macrodrenagem</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/mineracao.html" data-target="#content-item-mineracao">Mineração</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/rodovia.html" data-target="#content-item-rodovias">Rodovias</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/saneamento.html" data-target="#content-item-saneamento">Saneamento</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/tuneis.html" data-target="#content-item-tuneis">Túneis</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/sobre.html" data-target="#content-item-sobre">Sobre a Castilho</a>
+							<hr class="margin">
+							<a class="dropdown-item" href="https://www.castilho.com.br/videos.html" data-target="#content-item-videos">Vídeos</a>
+						</div>
+
+					</li>
 				</li>
 				<li><a href="#">Contato</a></li>
 			</ul>
@@ -44,7 +77,9 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="banner__texto">
-							<p>A Construtora Castilho desenvolve projetos de engenharia e obras de infraestrutura em todo o território nacional e possui filiais em diversos pontos do país. Desde 1958, atua no mercado de construção pesada, com especialidade no segmento de obras rodoviárias.</p>
+							<p>A Construtora Castilho desenvolve projetos de engenharia e obras de infraestrutura em
+								todo o território nacional e possui filiais em diversos pontos do país. Desde 1958, atua
+								no mercado de construção pesada, com especialidade no segmento de obras rodoviárias.</p>
 						</div>
 					</div>
 				</div>
@@ -73,53 +108,269 @@
 
 		<section id="content-section">
 			<div class="container">
-			<div class="content-item" id="content-item-1">
-				<h2>CONCESSÕES</h2>
-				<div class="content-item__description">
-					<br>
-					<p>A Castilho foi uma das pioneiras a atuar no mercado de concessões e, por isso, conta com especial experiência no setor, além de ótimos resultados e uma moderna visão de planejamento e investimento de longo prazo.</p>
+				<div class="content-item" id="content-item-concessoes">
+					<h2>Concessões</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_concessoes.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre as concessões...</p>
+						</div>
+					</div>
 				</div>
-				<div class="content-details">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="content-image">
-								<img src="https://i.imgur.com/tleN08u.jpg" alt="Imagem de Fundo 1">
-								<label class="city-label">Matinhos</label>
+
+				<div class="content-item" id="content-item-contencoes">
+					<h2>Contenções/Obras de Artes Especiais</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_contencoes.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre as contenções/obras de artes especiais...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-construcao">
+					<h2>Construção Civil/Industriais</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_construcao.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a construção civil/industriais...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-ferrovias">
+					<h2>Ferrovias</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_ferrovias.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre as ferrovias...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-infraestrutura">
+					<h2>Infraestrutura/Resíduos Sólidos</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_infraestrutura.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a infraestrutura/resíduos sólidos...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-iso9001">
+					<h2>ISO 9001</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_iso9001.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a ISO 9001...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-mapa">
+					<h2>Mapa</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_mapa.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre o mapa...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-macrodrenagem">
+					<h2>Macrodrenagem</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_macrodrenagem.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a macrodrenagem...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-mineracao">
+					<h2>Mineração</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_mineracao.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a mineração...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-rodovias">
+					<h2>Rodovias</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_rodovias.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre as rodovias...</p>
+						</div>
+					</div>
+					<div class="container">
+						<div class="content-item" id="content-item-concessoes">
+							<h2>Concessões</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_concessoes.jpg" alt="Imagem de Fundo">
+									<label class="city-label">São Paulo</label>
+								</div>
+								<div class="content-description">
+									<p>A construção de novas rodovias e a revitalização de estradas antigas proporcionaram um aumento significativo na mobilidade da cidade de São Paulo, beneficiando os moradores e o desenvolvimento econômico da região.</p>
+								</div>
 							</div>
-							<div class="content-description">
-								<p>Obra feita no Paraná</p>
+						</div>
+
+						<div class="content-item" id="content-item-contencoes">
+							<h2>Contenções/Obras de Artes Especiais</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_contencoes.jpg" alt="Imagem de Fundo">
+									<label class="city-label">Rio de Janeiro</label>
+								</div>
+								<div class="content-description">
+									<p>A construção de muros de arrimo e estruturas de sustentação no Rio de Janeiro permitiu a expansão de áreas urbanas, protegendo contra deslizamentos de terra e garantindo a segurança dos moradores.</p>
+								</div>
 							</div>
+						</div>
+
+						<div class="content-item" id="content-item-construcao">
+							<h2>Construção Civil/Industriais</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_construcao.jpg" alt="Imagem de Fundo">
+									<label class="city-label">Belo Horizonte</label>
+								</div>
+								<div class="content-description">
+									<p>A edificação de novos prédios comerciais e residenciais em Belo Horizonte contribuiu para o crescimento urbano da cidade, proporcionando espaços modernos e funcionais para a população e impulsionando o setor imobiliário.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-item" id="content-item-ferrovias">
+							<h2>Ferrovias</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_ferrovias.jpg" alt="Imagem de Fundo">
+									<label class="city-label">Recife</label>
+								</div>
+								<div class="content-description">
+									<p>A construção de novas linhas ferroviárias e a modernização da infraestrutura ferroviária existente em Recife proporcionaram um sistema de transporte eficiente e sustentável, conectando a cidade e facilitando o deslocamento dos passageiros.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-item" id="content-item-infraestrutura">
+							<h2>Infraestrutura/Resíduos Sólidos</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_infraestrutura.jpg" alt="Imagem de Fundo">
+									<label class="city-label">Fortaleza</label>
+								</div>
+								<div class="content-description">
+									<p>A melhoria da infraestrutura e a implementação de sistemas eficientes de gestão de resíduos sólidos em Fortaleza contribuíram para o desenvolvimento sustentável da cidade, promovendo a preservação do meio ambiente e a qualidade de vida da população.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-item" id="content-item-iso9001">
+							<h2>ISO 9001</h2>
+							<div class="content-details">
+								<div class="content-image">
+									<img src="https://www.castilho.com.br/imagem_iso9001.jpg" alt="Imagem de Fundo">
+									<label class="city-label">Porto Alegre</label>
+								</div>
+								<div class="content-description">
+									<p>A certificação ISO 9001 obtida em Porto Alegre atesta a excelência na gestão de qualidade em projetos de construção, garantindo a satisfação dos clientes, o cumprimento de padrões internacionais e a busca constante pela melhoria contínua.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<div class="content-item" id="content-item-saneamento">
+					<h2>Saneamento</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_saneamento.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre o saneamento...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-tuneis">
+					<h2>Túneis</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_tuneis.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre os túneis...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-sobre">
+					<h2>Sobre a Castilho</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_sobre.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre a Castilho...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-item" id="content-item-videos">
+					<h2>Vídeos</h2>
+					<div class="content-details">
+						<div class="content-image">
+							<img src="https://www.castilho.com.br/imagem_videos.jpg" alt="Imagem de Fundo">
+							<label class="city-label">Nome da Cidade</label>
+						</div>
+						<div class="content-description">
+							<p>Conteúdo descritivo sobre os vídeos...</p>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="content-item" id="content-item-2">
-				<h2>Título do Conteúdo Relacionado 2</h2>
-				<div class="content-details">
-					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg" alt="Imagem de Fundo 2">
-						<label class="city-label">Nome da Cidade 2</label>
-					</div>
-					<div class="content-description">
-						<p>Conteúdo descritivo sobre a cidade 2...</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="content-item" id="content-item-3">
-				<h2>Título do Conteúdo Relacionado 3</h2>
-				<div class="content-details">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg" alt="Imagem de Fundo 3">
-						<label class="city-label">Nome da Cidade 3</label>
-					</div>
-					<div class="content-description">
-						<p>Conteúdo descritivo sobre a cidade 3...</p>
-					</div>
-			</div>
-			</div>
-		</div>
 		</section>
+	</div>
+</section>  <!-- Closing tag </section> here seems to be incorrect -->
 
 	</div>
 
@@ -131,7 +382,7 @@
 		function showContent(contentId) {
 			// Oculta todos os content-items
 			var contentItems = document.querySelectorAll('.content-item');
-			contentItems.forEach(function(item) {
+			contentItems.forEach(function (item) {
 				item.style.display = 'none';
 			});
 
@@ -141,8 +392,6 @@
 		}
 	</script>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script>
