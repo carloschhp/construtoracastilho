@@ -67,7 +67,8 @@
 				<h2>Título do Conteúdo Relacionado 1</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892364_960_720.jpg" alt="Imagem de Fundo 1">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892364_960_720.jpg"
+							alt="Imagem de Fundo 1">
 						<label class="city-label">Nome da Cidade 1</label>
 					</div>
 					<div class="content-description">
@@ -80,7 +81,8 @@
 				<h2>Título do Conteúdo Relacionado 2</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg" alt="Imagem de Fundo 2">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg"
+							alt="Imagem de Fundo 2">
 						<label class="city-label">Nome da Cidade 2</label>
 					</div>
 					<div class="content-description">
@@ -93,28 +95,19 @@
 				<h2>Título do Conteúdo Relacionado 3</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg" alt="Imagem de Fundo 3">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg"
+							alt="Imagem de Fundo 3">
 						<label class="city-label">Nome da Cidade 3</label>
 					</div>
 					<div class="content-description">
-						 <p>Conteúdo descritivo sobre a cidade 3...</p>
+						<p>Conteúdo descritivo sobre a cidade 3...</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<script>
-			function showContent(contentId) {
-				// Oculta todos os content-items
-				var contentItems = document.querySelectorAll('.content-item');
-				contentItems.forEach(function(item) {
-					item.style.display = 'none';
-				});
 
-				// Exibe o content-item correspondente ao slider-item clicado
-				var selectedContent = document.getElementById(contentId);
-				selectedContent.style.display = 'block';
-			}
 		</script>
 
 	</div>
@@ -128,40 +121,54 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script>
-		$(document).ready(function () {
-			$('.slider').slick({
-				dots: true,
-				arrows: true,
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 5000
+		document.addEventListener("DOMContentLoaded", (event) => {
+			$(document).ready(function () {
+				$('.slider').slick({
+					dots: true,
+					arrows: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 5000
+				});
 			});
-		});
 
-		// Seleciona todos os links com a classe "scroll-link"
-		const scrollLinks = document.querySelectorAll('.scroll-link');
+			// Seleciona todos os links com a classe "scroll-link"
+			const scrollLinks = document.querySelectorAll('.scroll-link');
 
-		// Adiciona o evento de clique em cada link
-		scrollLinks.forEach(link => {
-			link.addEventListener('click', smoothScroll);
-		});
-
-		// Função para rolagem suave ao clicar em um link
-		function smoothScroll(event) {
-			event.preventDefault();
-
-			const targetId = this.getAttribute('href'); // Obtém o ID do alvo da rolagem
-
-			// Calcula a posição do alvo em relação ao topo da página
-			const targetPosition = document.querySelector(targetId).offsetTop;
-
-			// Faz a rolagem suave utilizando a função scrollIntoView
-			window.scrollTo({
-				top: targetPosition,
-				behavior: 'smooth'
+			// Adiciona o evento de clique em cada link
+			scrollLinks.forEach(link => {
+				link.addEventListener('click', smoothScroll);
 			});
-		}
+
+			// Função para rolagem suave ao clicar em um link
+			function smoothScroll(event) {
+				event.preventDefault();
+
+				const targetId = this.getAttribute('href'); // Obtém o ID do alvo da rolagem
+
+				// Calcula a posição do alvo em relação ao topo da página
+				const targetPosition = document.querySelector(targetId).offsetTop;
+
+				// Faz a rolagem suave utilizando a função scrollIntoView
+				window.scrollTo({
+					top: targetPosition,
+					behavior: 'smooth'
+				});
+			}
+
+			function showContent(contentId) {
+				// Oculta todos os content-items
+				var contentItems = document.querySelectorAll('.content-item');
+				contentItems.forEach(function (item) {
+					item.style.display = 'none';
+				});
+
+				// Exibe o content-item correspondente ao slider-item clicado
+				var selectedContent = document.getElementById(contentId);
+				selectedContent.style.display = 'block';
+			}
+		});
 	</script>
 
 </body>
