@@ -5,92 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construtora Castilho</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="dist/css/style.css">
+  <style>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Seção com slider e fundo amarelo suave */
+    .slider-section {
+      background-color: #ffeeba;
+      padding: 40px 0;
+    }
+
+    .slider-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 80px;
+    }
+
+    .slider-item h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .slider-item a {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    /* Estilo predefinido para o slider */
+    .slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .slick-slide {
+      padding: 20px;
+    }
+
+    .slick-slide h1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .slick-slide a {
+      font-size: 14px;
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #333;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div id="logo"></div>
     <nav id="menu">
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Ação</a>
-            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Algo mais aqui</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <div id="banner">
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus a purus placerat placerat. Aenean eu eleifend urna.</p>
+    <h1>Welcome to My Site</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus auctor, sagittis dui at, aliquet nisl. Nunc vel placerat lacus.</p>
   </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div id="content">
-          <h2>Título do Conteúdo</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec risus a purus placerat placerat. Aenean eu eleifend urna.</p>
+  <div id="content">
+    <section class="slider-section">
+      <div class="slider">
+        <div class="slick-slide">
+          <div class="slider-item">
+            <h1>Slider Item 1</h1>
+            <a href="#">Veja mais</a>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div id="sidebar">
-          <ul>
-            <li><a href="#">Item da Barra Lateral 1</a></li>
-            <li><a href="#">Item da Barra Lateral 2</a></li>
-            <li><a href="#">Item da Barra Lateral 3</a></li>
-            <li><a href="#">Item da Barra Lateral 4</a></li>
-            <li><a href="#">Item da Barra Lateral 5</a></li>
-          </ul>
+        <div class="slick-slide">
+          <div class="slider-item">
+            <h1>Slider Item 2</h1>
+            <a href="#">Veja mais</a>
+          </div>
         </div>
-        <div id="toggle-sidebar"></div>
+        <div class="slick-slide">
+          <div class="slider-item">
+            <h1>Slider Item 3</h1>
+            <a href="#">Veja mais</a>
+          </div>
+        </div>
+        <!-- Adicionar mais itens de slider conforme necessário -->
       </div>
-    </div>
+    </section>
+
+    <section>
+      <!-- Adicionar conteúdo adicional da seção aqui -->
+    </section>
+
+    <section>
+      <!-- Adicionar conteúdo adicional da seção aqui -->
+    </section>
   </div>
 
   <footer>
-    <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Construtora Castilho. Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script>
-    // Função para exibir ou ocultar a barra lateral
-    function toggleSidebar() {
-      var sidebar = document.getElementById("sidebar");
-      var toggleButton = document.getElementById("toggle-sidebar");
-
-      if (sidebar.style.left === "-200px") {
-        sidebar.style.left = "0";
-        toggleButton.style.opacity = "0.5";
-      } else {
-        sidebar.style.left = "-200px";
-        toggleButton.style.opacity = "1";
-      }
-    }
-
-    // Função para mostrar ou ocultar o botão "Voltar ao topo"
-    function toggleBackToTop() {
-      var backToTop = document.getElementById("back-to-top");
-      if (window.scrollY >= 200) {
-        backToTop.classList.add("show");
-      } else {
-        backToTop.classList.remove("show");
-      }
-    }
-
-    // Event listeners
-    window.addEventListener("scroll", toggleBackToTop);
-    document.getElementById("toggle-sidebar").addEventListener("click", toggleSidebar);
+    $(document).ready(function() {
+      $('.slider').slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000
+      });
+    });
   </script>
 </body>
 </html>
