@@ -1,8 +1,9 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
+
 
 gulp.task('compile-scss', function () {
   return gulp.src('src/css/*.scss')
