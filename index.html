@@ -44,30 +44,30 @@
 	</div>
 
 	<div id="content">
+
 		<section class="slider-section">
 			<div class="slider">
-				<div class="slider-item">
+				<div class="slider-item" id="slider-item-1">
 					<h1>Título do Item 1</h1>
-					<a href="#content-section">Veja Mais</a>
+					<a href="#content-section" onclick="showContent('content-item-1')">Veja Mais</a>
 				</div>
-				<div class="slider-item">
+				<div class="slider-item" id="slider-item-2">
 					<h1>Título do Item 2</h1>
-					<a href="#content-section">Veja Mais</a>
+					<a href="#content-section" onclick="showContent('content-item-2')">Veja Mais</a>
 				</div>
-				<div class="slider-item">
+				<div class="slider-item" id="slider-item-3">
 					<h1>Título do Item 3</h1>
-					<a href="#content-section">Veja Mais</a>
+					<a href="#content-section" onclick="showContent('content-item-3')">Veja Mais</a>
 				</div>
 			</div>
 		</section>
 
 		<section id="content-section">
-			<div class="content-item">
-				<h2>Título do Conteúdo Relacionado</h2>
+			<div class="content-item" id="content-item-1">
+				<h2>Título do Conteúdo Relacionado 1</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2021/08/10/21/01/building-6536662_960_720.jpg"
-							alt="Imagem de Fundo 1">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892364_960_720.jpg" alt="Imagem de Fundo 1">
 						<label class="city-label">Nome da Cidade 1</label>
 					</div>
 					<div class="content-description">
@@ -76,12 +76,11 @@
 				</div>
 			</div>
 
-			<div class="content-item">
-				<h2>Título do Conteúdo Relacionado</h2>
+			<div class="content-item" id="content-item-2">
+				<h2>Título do Conteúdo Relacionado 2</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2017/07/28/23/34/building-2558259_960_720.jpg"
-							alt="Imagem de Fundo 2">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892366_960_720.jpg" alt="Imagem de Fundo 2">
 						<label class="city-label">Nome da Cidade 2</label>
 					</div>
 					<div class="content-description">
@@ -90,12 +89,11 @@
 				</div>
 			</div>
 
-			<div class="content-item">
-				<h2>Título do Conteúdo Relacionado</h2>
+			<div class="content-item" id="content-item-3">
+				<h2>Título do Conteúdo Relacionado 3</h2>
 				<div class="content-details">
 					<div class="content-image">
-						<img src="https://cdn.pixabay.com/photo/2016/11/19/15/20/architecture-1842092_960_720.jpg"
-							alt="Imagem de Fundo 3">
+						<img src="https://cdn.pixabay.com/photo/2023/05/17/15/38/architecture-5892368_960_720.jpg" alt="Imagem de Fundo 3">
 						<label class="city-label">Nome da Cidade 3</label>
 					</div>
 					<div class="content-description">
@@ -105,14 +103,20 @@
 			</div>
 		</section>
 
+		<script>
+			function showContent(contentId) {
+				// Oculta todos os content-items
+				var contentItems = document.querySelectorAll('.content-item');
+				contentItems.forEach(function(item) {
+					item.style.display = 'none';
+				});
 
-		<section>
-			<!-- Adicionar conteúdo adicional da seção aqui -->
-		</section>
+				// Exibe o content-item correspondente ao slider-item clicado
+				var selectedContent = document.getElementById(contentId);
+				selectedContent.style.display = 'block';
+			}
+		</script>
 
-		<section>
-			<!-- Adicionar conteúdo adicional da seção aqui -->
-		</section>
 	</div>
 
 	<footer>
