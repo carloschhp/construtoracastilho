@@ -4,7 +4,7 @@
         margin: 0;
         padding: 0;
       }
-  
+
       header {
         background-color: #333;
         color: #fff;
@@ -13,24 +13,24 @@
         justify-content: space-between;
         align-items: center;
       }
-  
+
       #logo {
         width: 100px;
         height: 50px;
         background-color: #fff;
       }
-  
+
       #menu ul {
         list-style-type: none;
         display: flex;
         gap: 10px;
       }
-  
+
       #menu ul li a {
         color: #fff;
         text-decoration: none;
       }
-  
+
       #banner {
         background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg');
         background-size: cover;
@@ -43,7 +43,7 @@
         color: #fff;
         position: relative;
       }
-      
+
       #banner::before {
         content: "";
         background-color: rgba(0, 0, 0, 0.3);
@@ -53,14 +53,14 @@
         width: 100%;
         height: 100%;
       }
-      
+
       #banner h1 {
         font-size: 36px;
         margin-bottom: 20px;
         position: relative;
         z-index: 1;
       }
-      
+
       #banner::after {
         content: "";
         background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg');
@@ -74,30 +74,30 @@
         opacity: 0.5;
         z-index: -1;
       }
-      
+
       @media (min-width: 768px) {
         #banner::after {
           transform: translate3d(0, -50%, 0);
         }
       }
-      
-  
+
+
       #banner h1 {
         font-size: 36px;
         margin-bottom: 20px;
       }
-  
+
       #content {
         padding: 20px;
       }
-  
+
       footer {
         background-color: #333;
         color: #fff;
         padding: 10px;
         text-align: center;
       }
-  
+
       #sidebar {
         position: fixed;
         top: 0;
@@ -109,18 +109,18 @@
         padding: 10px;
         transition: left 0.3s ease;
       }
-  
+
       #sidebar ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
       }
-  
+
       #sidebar ul li a {
         color: #fff;
         text-decoration: none;
       }
-  
+
       #toggle-sidebar {
         position: fixed;
         top: 20px;
@@ -133,7 +133,7 @@
         cursor: pointer;
         transition: opacity 0.3s ease;
       }
-  
+
       #back-to-top {
         position: fixed;
         bottom: 20px;
@@ -150,7 +150,7 @@
         cursor: pointer;
         transition: opacity 0.3s ease;
       }
-  
+
       #back-to-top.show {
         display: block;
       }
@@ -160,7 +160,7 @@
         background-color: #ffeeba;
         padding: 40px 0;
       }
-  
+
       .slider-item {
         display: flex;
         flex-direction: column;
@@ -169,35 +169,35 @@
         text-align: center;
         height: 80px;
       }
-  
+
       .slider-item h1 {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 15px;
       }
-  
+
       .slider-item a {
         margin-top: 15px;
         font-size: 14px;
       }
-  
+
       /* Estilo predefinido para o slider */
       .slider {
         width: 80%;
         margin: 0 auto;
       }
-  
+
       .slick-slide {
         padding: 20px;
       }
-  
+
       .slick-slide h1 {
         font-size: 24px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 15px;
       }
-  
+
       .slick-slide a {
         font-size: 14px;
         display: block;
