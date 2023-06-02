@@ -39,6 +39,10 @@ body {
           a {
             color: #000;
             text-decoration: none;
+
+            &:hover {
+              color: #d39e00;
+            }
           }
 
           +li {
