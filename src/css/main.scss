@@ -1,292 +1,346 @@
 /* Estilos personalizados */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 
-    header {
-      color: #000;
-      padding: 10px;
-      display: flex;
-      align-items: center;
+  header {
+    color: #000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 
-      #logo {
-        background-color: #fff;
+    #logo {
+      background-color: #fff;
 
-        img {
-          width: 280px;
-          height: auto;
-          transition: 0.3s ease;
-          cursor: pointer;
+      img {
+        width: 280px;
+        height: auto;
+        transition: 0.3s ease;
+        cursor: pointer;
 
-          &:hover {
-            transform: translate(0px 5px);
-          }
-        }
-      }
-
-      #menu {
-        width: 100%;
-        ul {
-          list-style-type: none;
-          display: flex;
-          // gap: 10px;
-          // padding: 0px;
-          margin: 0px;
-
-          li {
-            a {
-              color: #000;
-              text-decoration: none;
-            }
-
-            + li {
-              margin-left: 15px;
-            }
-
-            .dropdown-toggle {
-              padding: 10px 0px;
-            }
-          }
-        }
-
-        .dropdown-menu {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          z-index: 999;
-          opacity: 0;
-          transition: opacity 0.3s ease, transform 0.3s ease;
-          transform: translateY(-30px);
-          transition: all 0.3s;
-
-          &.show {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-            transition: all 0.3s;
-          }
-
-          .dropdown-item {
-            padding: 10px 15px;
-            margin: -5px 0px;
-            transition: all 0.3s;
-
-            &:hover {
-              background-color: #ffce3b;
-              // color: white;
-            }
-          }
-        }
-
-        .dropdown:hover .dropdown-menu {
-          @extend .show;
-        }
-
-      }
-    }
-
-    #banner {
-      background-image: url('https://i.imgur.com/VvzuCnc.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      position: relative;
-
-      &::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-        position: relative;
-        z-index: 1;
-      }
-
-      &::after {
-        content: "";
-        // background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg');
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
-        z-index: -1;
-      }
-
-      .banner__texto {
-        font-size: 18px;
-      }
-
-      @media (min-width: 768px) {
-        &::after {
-          transform: translate3d(0, -50%, 0);
+        &:hover {
+          transform: translate(0px 5px);
         }
       }
     }
 
-    #content {
-      padding: 20px;
-
-      #content-section {
-        .content-item {
-          & .item__description {
-            p {
-              // Estilos para a descrição do item
-            }
-          }
-
-          .content-details {
-            .content-image {
-                position: relative;
-
-            }
-            .city-label {
-                background-color: #ffce3b;
-                padding: 5px 10px;
-            }
-          }
-
-
-        }
-      }
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    #sidebar {
-      position: fixed;
-      top: 0;
-      left: -200px;
-      width: 200px;
-      height: 100%;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      transition: left 0.3s ease;
+    #menu {
+      width: 100%;
 
       ul {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
+        display: flex;
+        // gap: 10px;
+        // padding: 0px;
+        margin: 0px;
 
         li {
           a {
-            color: #fff;
+            color: #000;
             text-decoration: none;
+          }
+
+          +li {
+            margin-left: 15px;
+          }
+
+          .dropdown-toggle {
+            padding: 10px 0px;
           }
         }
       }
-    }
 
-    #toggle-sidebar {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      width: 40px;
-      height: 40px;
-      background-color: #333;
-      border-radius: 50%;
-      display: none;
-      cursor: pointer;
-      transition: opacity 0.3s ease;
-    }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-30px);
+        transition: all 0.3s;
 
-    #back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 40px;
-      height: 40px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      line-height: 40px;
-      font-size: 20px;
-      border-radius: 50%;
-      display: none;
-      cursor: pointer;
-      transition: opacity 0.3s ease;
-
-      &.show {
-        display: block;
-      }
-    }
-
-    /* Seção com slider e fundo amarelo suave */
-    .slider-section {
-      background-color: #ffffff;
-      padding: 60px 0;
-
-      .slider-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 80px;
-
-        h1 {
-          font-size: 28px;
-          font-weight: bold;
-          margin-bottom: 15px;
-        }
-
-        a {
-          margin-top: 15px;
-          font-size: 14px;
-        }
-      }
-    }
-
-    /* Estilo predefinido para o slider */
-    .slider {
-      width: 80%;
-      margin: 0 auto;
-
-      .slick-slide {
-        padding: 20px;
-
-        h1 {
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center;
-          margin-bottom: 15px;
-        }
-
-        a {
-          font-size: 14px;
+        &.show {
           display: block;
-          text-align: center;
-          margin-top: 15px;
-          color: #333;
-          text-decoration: underline;
+          opacity: 1;
+          transform: translateY(0);
+          transition: all 0.3s;
+        }
+
+        .dropdown-item {
+          padding: 10px 15px;
+          margin: -5px 0px;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: #ffce3b;
+            // color: white;
+          }
+        }
+      }
+
+      .dropdown:hover .dropdown-menu {
+        @extend .show;
+      }
+
+    }
+  }
+
+  #banner {
+    background-image: url('https://i.imgur.com/VvzuCnc.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      // background-image: url('https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    .banner__texto {
+      font-size: 18px;
+
+      
+    }
+
+    @media (min-width: 768px) {
+      &::after {
+        transform: translate3d(0, -50%, 0);
+      }
+    }
+  }
+
+  #content {
+    padding: 20px;
+
+    #content-section {
+      .content-item {
+        & .item__description {
+          p {
+            // Estilos para a descrição do item
+          }
+        }
+
+        .content-details {
+          .content-image {
+            position: relative;
+
+          }
+
+          .city-label {
+            background-color: #ffce3b;
+            padding: 5px 10px;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    transition: left 0.3s ease;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
         }
       }
     }
   }
 
-  hr.margin {
-    margin: 5px 0px;
+  #toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  /* Seção com slider e fundo amarelo suave */
+  .slider-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+
+    .slider-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 80px;
+      cursor: grab;
+
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      a {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+    }
+
+    /* Estilo para o botão Anterior */
+    .slick-prev {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .slick-prev:hover {
+      background-color: #555;
+    }
+
+    /* Estilo para o botão Próximo */
+    .slick-next {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .slick-next:hover {
+      background-color: #555;
+    }
+
+  }
+
+  /* Estilo predefinido para o slider */
+  .slider {
+    width: 80%;
+    margin: 0 auto;
+
+    .slick-slide {
+      padding: 20px;
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 15px;
+        color: #333;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+        text-decoration: none;
+
+        &:hover {
+          color: #d39e00;
+        }
+      }
+    }
+  }
+}
+
+hr.margin {
+  margin: 5px 0px;
 }
