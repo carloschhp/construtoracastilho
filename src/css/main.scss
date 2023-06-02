@@ -24,7 +24,15 @@ body {
         }
       }
     }
+    .navbar {
+      background-color: white;
+      /* outras propriedades de estilo para a navbar */
+    }
 
+    .scrolled {
+      background-color: yellow;
+      /* adicione outras propriedades de estilo, se necessário */
+    }
     #menu {
       width: 100%;
 
@@ -106,6 +114,12 @@ body {
     position: relative;
     background-attachment: fixed;
 
+   @media (max-width: 768px) {
+      // &::after {
+      //   // height: 600px;
+      // }
+    }
+
     &::before {
       content: "";
       background-color: rgba(0, 0, 0, 0.3);
@@ -159,7 +173,9 @@ body {
       .content-item {
         & .item__description {
           p {
-            // Estilos para a descrição do item
+            + p {
+              margin-top: 15px;
+            }
           }
         }
 
@@ -285,6 +301,15 @@ body {
   }
 
   /* Seção com slider e fundo amarelo suave */
+  .slider {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .slider.show {
+    opacity: 1;
+  }
+
   .slider-section {
     background-color: #ffffff;
     padding: 60px 0;

@@ -19,13 +19,38 @@
 	<!-- Inclua as bibliotecas do Bootstrap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('menu');
 
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+
+  window.addEventListener('scroll', function() {
+  var parallaxElements = document.getElementsByClassName('parallax__element');
+  for (var i = 0; i < parallaxElements.length; i++) {
+    var element = parallaxElements[i];
+    var scrollPosition = window.pageYOffset;
+    var elementPosition = element.offsetTop;
+    var distanceFromTop = scrollPosition - elementPosition; // Alteração na fórmula
+    var speed = 0.5; // Ajuste a velocidade de paralaxe conforme necessário
+
+    element.style.transform = 'translateY(' + (distanceFromTop * speed) + 'px)';
+  }
+});
+
+
+});
+</script>
 </head>
 
 <body>
 	<header>
 		<div id="logo"><img src="https://www.castilho.com.br/img/logo-castilho.png" alt=""></div>
-		<nav id="menu">
+		<nav id="menu" class="navbar">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Área Restrita</a></li>
@@ -85,26 +110,24 @@
 		</nav>
 	</header>
 
-	<div id="banner">
+	<div id="banner" class="parallax">
 		<div class="col-12">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="banner__texto">
-							<p>A Construtora Castilho desenvolve projetos de engenharia e obras de infraestrutura em
-								todo o território nacional e possui filiais em diversos pontos do país. Desde 1958, atua
-								no mercado de construção pesada, com especialidade no segmento de obras rodoviárias.</p>
-						</div>
-					</div>
+		  <div class="container">
+			<div class="row">
+			  <div class="col-12">
+				<div class="banner__texto parallax__element">
+				  <p>A Construtora Castilho desenvolve projetos de engenharia e obras de infraestrutura...</p>
 				</div>
+			  </div>
 			</div>
+		  </div>
 		</div>
-	</div>
+	  </div>
 
 	<div id="content">
 
 		<section class="slider-section">
-			<div class="slider">
+			<div class="slider hidden">
 				<div class="slider-item" id="slider-item-1">
 					<h1>CONCESSÕES</h1>
 					<a href="#content-section" onclick="showContent('content-item-concessoes')">clique para saber mais</a>

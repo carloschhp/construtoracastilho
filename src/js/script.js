@@ -20,7 +20,9 @@ $(document).ready(function () {
     sidebarToggle.click(function () {
       sidebar.toggle('slide', { direction: 'left' }, 500);
     });
+  });
 
+  document.addEventListener('DOMContentLoaded', function() {
     var contentItems = document.querySelectorAll('.content-item');
     for (var i = 1; i < contentItems.length; i++) {
       contentItems[i].style.display = 'none';
@@ -29,7 +31,7 @@ $(document).ready(function () {
     function showContent(contentId) {
       // Oculta todos os content-items
       var contentItems = document.querySelectorAll('.content-item');
-      contentItems.forEach(function (item) {
+      contentItems.forEach(function(item) {
         item.style.display = 'none';
       });
 
@@ -44,4 +46,21 @@ $(document).ready(function () {
         behavior: "smooth"
       });
     }
+
+    window.addEventListener('scroll', revealSlider);
+
+function revealSlider() {
+  const sliderSection = document.querySelector('.slider-section');
+  const slider = document.querySelector('.slider');
+  const sliderPosition = sliderSection.getBoundingClientRect().top;
+
+  // Valor em pixels a partir do topo da janela em que o efeito é acionado
+  const triggerPoint = window.innerHeight * 0.8;
+
+  if (sliderPosition < triggerPoint) {
+    slider.classList.add('show');
+    window.removeEventListener('scroll', revealSlider);
+  }
+}
+
   });
