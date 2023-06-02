@@ -20,7 +20,7 @@ body {
         cursor: pointer;
 
         &:hover {
-          transform: translate(0px 5px);
+          transform: translate(15px, 0px);
         }
       }
     }
@@ -76,6 +76,7 @@ body {
 
           &:hover {
             background-color: #ffce3b;
+            padding: 15px 20px 15px 20px;
             // color: white;
           }
         }
@@ -99,6 +100,7 @@ body {
     text-align: center;
     color: #fff;
     position: relative;
+    background-attachment: fixed;
 
     &::before {
       content: "";
@@ -136,7 +138,7 @@ body {
     .banner__texto {
       font-size: 18px;
 
-      
+
     }
 
     @media (min-width: 768px) {
@@ -181,43 +183,81 @@ body {
     text-align: center;
   }
 
-  #sidebar {
-    position: fixed;
-    top: 0;
-    left: -200px;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
+  .wrapper {
+    display: flex;
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 250px;
+    background: #333;
     color: #fff;
-    padding: 10px;
-    transition: left 0.3s ease;
+    padding: 20px;
+    transition: all 0.3s;
+  }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+  .sidebar-header {
+    margin-bottom: 20px;
+  }
 
-      li {
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-      }
+  .sidebar h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .sidebar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: absolute;
+      left: -100%;
+      transition: all 0.3s;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .content {
+      margin-left: 0;
+    }
+
+    .sidebar-toggle {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
     }
   }
 
-  #toggle-sidebar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 50%;
-    display: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-  }
 
   #back-to-top {
     position: fixed;
@@ -260,10 +300,37 @@ body {
         margin-bottom: 15px;
       }
 
-      a {
-        margin-top: 15px;
-        font-size: 14px;
-      }
+    a {
+      margin-top: 15px;
+      font-size: 14px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:hover {
+      color: #000;
+      background-size: 0.125rem 3.125rem;
+    color: #fcfcfc;
+    }
+
+    a:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
     }
 
     /* Estilo para o botão Anterior */
