@@ -43,7 +43,7 @@ header {
           white-space: pre;
 
           &:hover {
-            color: #d39e00;
+            color: #060606;
           }
         }
 
@@ -77,20 +77,21 @@ header {
 
       .dropdown-item {
         padding: 10px 15px;
-        margin: 0px 0px;
+        margin: -5px 0px;
         transition: all 0.3s;
+        font-size: 16px;
 
         &:hover {
           background-color: #ffce3b;
-          padding: 10px 15px 10px 25px;
+          padding: 10px 15px;
           // color: white;
         }
       }
     }
 
-    // .dropdown:hover .dropdown-menu {
-    //   @extend .show;
-    // }
+    .dropdown:hover .dropdown-menu {
+    @extend .show;
+    }
   }
 
   #logo {
@@ -375,9 +376,10 @@ footer {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #333;
+    background-color: transparent;
+
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 50%;
     font-size: 20px;
@@ -389,15 +391,28 @@ footer {
     background-color: #555;
   }
 
+  &:before {
+    left: 5%;
+    font-family: slick;
+    font-size: 35px;
+    line-height: 1;
+    opacity: .75;
+    color: #ffce3b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 15%;
+  }
+
   /* Estilo para o botão Próximo */
   .slick-next {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 50%;
     font-size: 20px;
@@ -407,6 +422,19 @@ footer {
 
   .slick-next:hover {
     background-color: #555;
+  }
+
+  &:before {
+    left: 5%;
+    font-family: slick;
+    font-size: 35px;
+    line-height: 1;
+    opacity: .75;
+    color: #ffce3b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 15%;
   }
 }
 
@@ -444,4 +472,15 @@ footer {
 
 hr.margin {
   margin: 5px 0px;
+}
+
+.slick-next:before, .slick-prev:before {
+  left: 5%;
+  font-family: slick;
+  font-size: 35px;
+  line-height: 1;
+  opacity: .75;
+  color: #ffce3b;
+  position: absolute;
+  top: 15%;
 }

@@ -10,8 +10,8 @@ $(document).ready(function () {
       arrows: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: '<button type="button" class="slick-prev">Anterior</button>',
-      nextArrow: '<button type="button" class="slick-next">Próximo</button>'
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>'
     });
 
     const sidebar = $('.sidebar');
