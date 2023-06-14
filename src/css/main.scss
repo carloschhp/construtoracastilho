@@ -386,6 +386,29 @@ footer {
         height: 300px;
         object-fit: cover;
       }
+
+      a {
+        transition: all 0.3s ease;
+      }
+
+.slider__itemContent__description {
+  margin: 0px 0px 30px 0px;
+}
+
+.slider__itemContent__img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  img {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: translate(0, 5px);
+    }
+  }
+}
     }
   }
 
@@ -476,7 +499,7 @@ footer {
       font-size: 14px;
       display: inline-block;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 40px;
       color: #333;
       text-decoration: underline;
       transition: all 0.3s ease;
