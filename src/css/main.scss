@@ -255,6 +255,10 @@ footer {
   padding: 20px;
 }
 
+.content-details {
+  margin-bottom: 45x;;
+}
+
 .sidebar-toggle {
   display: none;
   background: none;
@@ -320,8 +324,11 @@ footer {
 }
 
 .slider-section {
-  background-color: #ffffff;
+  background-color: cornsilk;
+  z-index: 99999999;
+  position: relative;
   padding: 60px 0;
+  margin-bottom: 50px;
 
   .slider-item {
     display: flex;
@@ -370,6 +377,7 @@ footer {
     }
 
     .slider__itemContent {
+      margin-top: 20px;
       p {
         font-size: 16px;
       }
