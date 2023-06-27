@@ -121,7 +121,7 @@ header {
   background-image: url("https://i.imgur.com/VvzuCnc.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +129,7 @@ header {
   color: #fff;
   position: relative;
   background-attachment: fixed;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     // &::after {
@@ -202,6 +203,22 @@ header {
           padding: 5px 10px;
         }
       }
+    }
+  }
+
+  .content__title {
+    h1 {
+      margin: 70px 0 30px;
+      font-size: 58px;
+      padding: 0px 25px;
+      font-weight: bold;
+    }
+    span {
+      display: block;
+      height: 10px;
+      width: 100px;
+      background-color: #ffce3b;
+      margin: 0px 20px;
     }
   }
 }
@@ -324,7 +341,6 @@ footer {
 }
 
 .slider-section {
-  background-color: cornsilk;
   z-index: 99999999;
   position: relative;
   padding: 60px 0;
